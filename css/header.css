@@ -1,0 +1,56 @@
+.menu{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--branco);
+    align-items: center;
+    position: relative;    
+}
+
+.menu__hamburguer{
+    background-image: url(../img/Menu.svg);
+    width: 36px;
+    height: 24px;
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+}
+
+.container__icon{
+    padding: 1rem;
+}
+
+.container__botao--menu{
+    display: none;
+}
+
+.menu__lista{
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 65vw;
+}
+
+.container__botao--menu:checked~.menu__lista{
+    display: block;
+}
+
+.menu__lista--item{
+    background-color: var(--branco);
+    padding: 1em;
+}
+
+.menu__lista--item h3{
+    font-weight: 700;
+    color: var(--laranja);
+}
+
+.menu__lista--link{
+    text-decoration: none;
+    color: #326589;
+}
+
